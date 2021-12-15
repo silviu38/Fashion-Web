@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+.gutter {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.header {
+    width: 100%;
+    height: 7vh;
+    position: fixed;
+    box-shadow:  0 4px 4px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 0 auto;
+}
+
+.button-header {
+    font: 14px "Poppins";
+    text-transform: uppercase;
+    padding: 10px;
+    color: #000;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.button-header:first-child {
+    border-bottom: 2px solid #eb8d2b;
+}
+
+.button-header:hover {
+    color: orange;
+    border-bottom: 2px solid #eb8d2b;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container {
+    padding-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.home-section {
+    width: 100%;
+    height: 100vh;
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+.home {
+    text-align: center;
+    padding: 250px 0 0 330px;
+}
+.title-header {
+    font: 200 62px "Poppins";
+    color: rgb(50, 50, 50);
+    line-height: 1.2;
+}
+h1 {
+    margin: 0;
+    padding-bottom: 15px;
+}
+.subt-home {
+    font: bold 20px "Source Sans Pro";
+    color: #616161;
+    margin-bottom: 25px;
+}
+.titles-home::after {
+    content: "";
+    display: block;
+    width: 470px;
+    border-style: solid;
+    border-width: 1px 0;
+    margin: 0 auto;
+    border-color: #eb8d2b;
+}
+.buttons-home {
+    margin-top: 55px;
+}
+
+.buttons-home a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font: 700 14px "Poppins";
+    border: 2px solid #eb8d2b;
+    cursor: pointer;
+}
+.button-right-home {
+    color: white;
+    background-color: #eb8d2b;
+    padding: 15px 30px;
+    margin-right: 30px;
+}
+.button-right-home:hover {
+    color: #eb8d2b;
+    background-color: white;
+    transition: all 500ms ease;
+}
+.button-left-home {
+    color: #eb8d2b;
+    background-color: white;
+    padding: 15px 30px;
+    margin-right: 50px;
+}
+.button-left-home:hover {
+    color: white;
+    background-color: #eb8d2b;
+    transition: all 500ms ease;
+}
+
+.fashion-section, .blog-section {
+    background-color: rgb(250, 250, 250);
+    padding-top: 100px;
+    width: 100%;
+    height: auto;
+}
+
+.titles-fashion, .titles-blog {
+    text-align: center;
+    margin-bottom: 70px;
+}
+.title-top {
+    color: #eb8d2b;
+    font: 700 14px "Poppins";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.title-top::before, .title-top::after {
+    content:"";
+    display: inline-block;
+    width: 50px;
+    vertical-align: middle;
+    border-color: #eb8d2b;
+    border-style: solid;
+    border-width: 2px 0 0;
+    margin: 0 15px;
+}
+.title-med {
+    font: 200 42px "Poppins";
+    margin-bottom: 20px;
+}
+.subt-section {
+    font: bold 18px "Source Sans Pro";
+    color: #505050;
+    letter-spacing: 1px;
+}
+.wrapper-fashion-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-product, .card-blog {
+    border: 1px solid rgb(170, 170, 170);
+    width: 350px;
+    height: auto;
+    margin-bottom: 40px;
+}
+.image-card {
+    height: 350px;
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgb(170, 170, 170);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.image-card-overlay {
+    height: 350px;
+    background: linear-gradient(180deg, rgba(129,129,129,1) 0%, rgba(230,228,228,1) 20%);
+    opacity: 0.5;
+    
+}
+.image-card-overlay:hover {
+    background: transparent; 
+    transition: all 500ms ease;
+}
+.header-card {
+    margin-left: 20px;
+}
+.header-card a, .header-card-blog a {
+    text-decoration: none;
+}
+.top-card-links a {
+    text-transform: uppercase;
+    color: #eb8d2b;
+    font: 600 10px "Poppins";
+    letter-spacing: 1px;
+}
+.top-card-links a:hover {
+    color: #000;
+    transition: 500ms ease;
+}
+.link-left::after {
+    content:"";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: #eb8d2b;
+    border-width: 1px 1px;
+    margin: -2px 3px 0 4px;
+}
+.link-right::after {
+    content:"";
+    display: inline-block;
+    width: 50px;
+    vertical-align: middle;
+    border-color: #eb8d2b;
+    border-style: solid;
+    border-width: 2px 0 0;
+    margin-left: 7px;
+}
+.top-card-links, .medium-card-link, .price-product {
+    margin-bottom: 15px;
+}
+.medium-card-link a {
+    color:#000;
+    font: 500 16px "Poppins";
+    letter-spacing: 1px;
+}
+.medium-card-link a:hover {
+    color: #eb8d2b;
+    transition: all 500ms ease;
+}
+.price-product {
+    color: #000;
+    font: 600 16px "Poppins";
+    padding-bottom: 10px;
+}
+.bottom-card-button a {
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 1px;
+    font: 700 12px "Poppins";
+    border: 2px solid;
+    padding: 10px 100px;
+}
+.bottom-card-button {
+    margin: 20px 0 40px 0;
+}
+.bottom-card-button a:hover {
+    color: white;
+    background-color: #000;
+    transition: all 500ms ease;
+}
+.wrapper-cards-blog {
+    display: flex;
+    justify-content: space-between;
+}
+.image-card-blog {
+    height: 234px;
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgb(170, 170, 170);
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	
+}
+.image-card-blog:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.body-card-blog {
+    text-align: center;
+}
+.link-left::before {
+    content:"";
+    display: inline-block;
+    width: 50px;
+    vertical-align: middle;
+    border-color: #eb8d2b;
+    border-style: solid;
+    border-width: 2px 0 0;
+    margin-right: 7px;
+}
+.circles-icons {
+    margin-bottom: 20px;
+}
+.circles-icons i {
+    font-size: 8px;
+    color: #eb8d2b;
+}
+.date {
+    color: #919191;
+    text-transform: uppercase;
+    font: 700 12px "Poppins";
+}
+.content-card-blog p {
+    font: 600 14px "Source Sans Pro",Arial,sans-serif;
+    line-height: 1.8;
+    color: #000;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+.content-card-blog::after {
+    content:"";
+    display: block;
+    width: 300px;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1px 0 0;
+    margin: 0 auto 20px;
+}
+.footer-card-blog a {
+    text-transform: uppercase;
+    color: #eb8d2b;
+    text-decoration: none;
+    font: 500 12px "Poppins";
+    margin-right: 5px;
+}
+.footer-card-blog i {
+    color: #919191;
+    margin-right: 5px;
+}
+.footer-card-blog a:hover {
+    color: #000;
+}
+.footer-card-blog {
+    margin-bottom: 20px;
+}
+.offer-section {
+    width: 100%;
+    height: 80vh;
+    background-position: 50%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.content-section {
+    height: 20vh;
+    margin: 100px 0 0 500px;
+}
+.header-offer h3 {
+    margin: 40px 0;
+    font: 300 32px "Poppins";
+    color: white;
+    line-height: 1.2;
+}
+.link-offer-section {
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: bold 14px "Poppins";
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.link-offer-section:hover {
+    color:  black;
+    border: 2px solid black; 
+    background-color: rgba(0, 0, 0, 0.2); 
+    transition: color 300ms ease, border 300ms ease 0.1s;
+}
+
+
